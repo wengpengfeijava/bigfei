@@ -1,6 +1,6 @@
-import Javascript from '@/views/StandardManage/Javascript.vue'
-import Css from '@/views/StandardManage/Css.vue'
-import Home from '@/views/Home.vue'
+import Javascript from '../../views/StandardManage/Javascript.vue'
+import Css from '../../views/StandardManage/Css.vue'
+import Home from '../../views/Home.vue'
 
 export default {
   path: '/StandardManage',

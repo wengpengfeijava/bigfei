@@ -36,7 +36,7 @@
         router.show = !router.show
       },
       handelClick (router) {
-        this.currentTag = router
+        this.currentRouter = router
       }
     }
   }
