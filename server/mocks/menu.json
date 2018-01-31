@@ -1,0 +1,71 @@
+{
+  "data": [
+    {
+      "name": "首页",
+      "icon": "home",
+      "router": {
+        "path": "/Home"
+      },
+      "parentId": 0,
+      "subs": [],
+      "order": 1
+    },
+    {
+      "name": "菜单管理",
+      "icon": "umbrella",
+      "router": {
+        "path": "/Menu"
+      },
+      "parentId": 0,
+      "subs": [],
+      "order": 2
+    },
+    {
+      "name": "规范管理",
+      "icon": "social-skype-outline",
+      "router": {
+        "path": "StandardManage"
+      },
+      "parentId": 0,
+      "subs": [
+        {
+          "name": "Javascript",
+          "icon": "social-javascript-outline",
+          "router": {
+            "path": "/StandardManage/Javascript"
+          }
+        },
+        {
+          "name": "Css",
+          "icon": "social-css3",
+          "router": {
+            "path": "/StandardManage/Css"
+          }
+        }
+      ],
+      "order": 3
+    },
+    {
+      "name": "组件管理",
+      "icon": "pricetags",
+      "router": {
+        "path": "/Menu"
+      },
+      "parentId": 0,
+      "subs": [],
+      "order": 4
+    },
+    {
+      "name": "权限管理",
+      "icon": "thumbsup",
+      "router": {
+        "path": "/Menu"
+      },
+      "parentId": 0,
+      "subs": [],
+      "order": 5
+    }
+  ],
+  "code": 10000,
+  "message": "获取数据成功!"
+}

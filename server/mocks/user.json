@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "name": "翁鹏飞",
+      "account": "wengpf",
+      "password": "wengpf",
+      "email": "wengpf@bfei.com",
+      "sex": 1,
+      "type": 1,
+      "phone": "15060606060",
+      "exts": "{\"qq\": \"466077335\"}",
+      "createTime": "",
+      "updateTime": "",
+      "status": 1,
+      "age": 25
+    }
+  ],
+  "code": 10000,
+  "message": "获取数据成功!"
+}

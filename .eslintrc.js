@@ -24,6 +24,7 @@ module.exports = {
     // // 没找到解决方案， 一格式化webstorm script标签下面就会缩进，一缩进，eslint就报警。
     // // 只能从根源把他且了。
     // allow async-await
+    // 由于官方有bug就暂时将index
     'indent': 'off',
     'vue/script-indent': ['warn', 2, {
       'baseIndent': 1
@@ -31,6 +32,8 @@ module.exports = {
     'vue/no-parsing-error': ['error', {
       'x-invalid-end-tag': false
     }],
+    // 'no-useless-computed-key': 'off',
+    'object-shorthand': ['off'],
     'generator-star-spacing': 'off',
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
