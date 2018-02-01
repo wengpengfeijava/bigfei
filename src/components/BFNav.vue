@@ -6,7 +6,7 @@
          @click.native="handelClick(router)"
          @on-close="handelClose(router)"
          :checkable="router.checkable"
-         :color="currentRouter.name===router.name?'blue':'default'"
+         :color="$route.path===router.path?'blue':'default'"
          :closable="router.closable">
       {{router.name}}
     </Tag>
@@ -24,7 +24,6 @@
     },
     computed: {
       [StoreType.RouterHistories] () {
-        console.log(this.$store.state[StoreType.RouterHistories])
         return this.$store.state[StoreType.RouterHistories]
       }
     },
@@ -33,10 +32,11 @@
     },
     methods: {
       handelClose (router) {
-        router.show = !router.show
+        this.$router.push(this.$store.state[StoreType.RouterHistories][router.index - 1].path)
+        this.$store.dispatch(StoreType.RouterHistories, router.index)
       },
       handelClick (router) {
-        this.currentRouter = router
+        this.$router.push(router.path)
       }
     }
   }
